@@ -88,21 +88,7 @@
  * ];
  * @endcode
  */
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => 'drupaldb',
-      'username' => 'drupaluser',
-      'password' => 'examplepass',
-      'host' => 'POSTGRES',
-      'port' => '5432',
-      'driver' => 'postgres',
-      'prefix' => '',
-    ),
-  ),
-);;
+$databases = [];
 
 /**
  * Customizing database settings.
@@ -853,7 +839,7 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'POSTGRES',
   'port' => '5432',
-  'namespace' => 'Drupal\\pgsql\\Driver\\Database\\pgsql',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
   'driver' => 'pgsql',
   'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 );
