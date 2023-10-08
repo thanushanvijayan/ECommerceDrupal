@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  drupal:
+    image: drupal:9-apache
+    ports:
+      - "8086:80"
+    volumes:
+      - ./web:/var/www/html
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: examplepass
+      POSTGRES_DB: drupaldb
+      POSTGRES_USER: drupaluser
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/root/.pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  pgadmin-data:
