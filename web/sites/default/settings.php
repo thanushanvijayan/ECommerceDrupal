@@ -88,7 +88,21 @@
  * ];
  * @endcode
  */
-$databases = [];
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'drupaldb',
+      'username' => 'drupaluser',
+      'password' => 'examplepass',
+      'host' => 'POSTGRES',
+      'port' => '5432',
+      'driver' => 'postgres',
+      'prefix' => '',
+    ),
+  ),
+);;
 
 /**
  * Customizing database settings.
