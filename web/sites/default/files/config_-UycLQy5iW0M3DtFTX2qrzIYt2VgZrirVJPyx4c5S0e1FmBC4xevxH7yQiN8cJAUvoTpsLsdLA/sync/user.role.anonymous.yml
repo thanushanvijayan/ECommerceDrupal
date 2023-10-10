@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - node.type.product
   module:
     - comment
     - contact
     - filter
+    - node
     - search
     - system
 _core:
@@ -20,5 +22,12 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'create product content'
+  - 'delete any product content'
+  - 'delete own product content'
+  - 'edit any product content'
+  - 'edit own product content'
+  - 'revert product revisions'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view product revisions'
