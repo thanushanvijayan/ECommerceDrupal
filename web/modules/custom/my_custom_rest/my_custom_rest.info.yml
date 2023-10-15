@@ -1,6 +1,6 @@
 name: 'My Custom REST'
 type: module
-description: 'Provides a custom REST endpoint.'
+description: 'Provides a custom REST endpoint with a custom normalizer.'
 core_version_requirement: ^8 || ^9
 package: Custom
 dependencies:

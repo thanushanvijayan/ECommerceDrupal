@@ -21,3 +21,13 @@ my_custom_rest.custom_resource_post:
     _permission: 'access content'
   options:
     _auth: ['basic_auth'] # Adjust based on your authentication method.
+
+my_custom_rest.node_detail:
+  path: '/custom_rest/node/{node_id}'
+  defaults:
+    _controller: '\Drupal\my_custom_rest\Controller\CustomRestController::get'
+    _title: 'Node Detail'
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['basic_auth']
