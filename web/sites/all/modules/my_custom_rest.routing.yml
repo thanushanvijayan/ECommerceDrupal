@@ -1,0 +1,7 @@
+my_custom_rest.resource:
+  path: '/my_custom_rest/resource'
+  defaults:
+    _controller: '\Drupal\my_custom_rest\Plugin\rest\resource\CustomRestResource::get'
+    _title: 'Custom Rest Resource'
+  requirements:
+    _permission: 'access content'

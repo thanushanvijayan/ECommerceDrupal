@@ -1,0 +1,9 @@
+name: 'My Custom REST'
+type: module
+description: 'Provides a custom REST endpoint.'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - drupal:rest
+version: '1.0'
+project: 'my_custom_rest'

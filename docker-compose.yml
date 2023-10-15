@@ -16,6 +16,8 @@ services:
       POSTGRES_PASSWORD: examplepass
       POSTGRES_DB: drupaldb
       POSTGRES_USER: drupaluser
+    ports:
+      - "5432:5432"
 
   pgadmin:
     image: dpage/pgadmin4

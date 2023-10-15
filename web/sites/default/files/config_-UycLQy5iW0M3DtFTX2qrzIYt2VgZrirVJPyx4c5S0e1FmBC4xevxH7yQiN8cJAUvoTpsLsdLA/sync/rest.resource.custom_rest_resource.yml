@@ -1,0 +1,19 @@
+uuid: 04b2c8d6-9b9b-403e-9076-511dbd99117b
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - my_custom_rest
+    - serialization
+id: custom_rest_resource
+plugin_id: custom_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth

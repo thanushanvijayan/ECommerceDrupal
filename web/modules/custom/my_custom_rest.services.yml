@@ -1,0 +1,6 @@
+services:
+  my_custom_rest.custom_rest_resource:
+    class: Drupal\my_custom_rest\Plugin\rest\resource\CustomRestResource
+    arguments: ['@serializer', '@logger.factory', '@current_user']
+    tags:
+      - { name: 'rest.resource' }

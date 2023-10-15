@@ -844,3 +844,7 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_-UycLQy5iW0M3DtFTX2qrzIYt2VgZrirVJPyx4c5S0e1FmBC4xevxH7yQiN8cJAUvoTpsLsdLA/sync';
+
+
+$config['system.logging']['error_level'] = 'verbose';
+$config['jwt.config']['secret'] = 'your_secret_key_here';

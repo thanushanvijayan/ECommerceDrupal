@@ -1,0 +1,23 @@
+# my_custom_rest.routing.yml
+
+my_custom_rest.custom_resource:
+  path: '/api/custom'
+  defaults:
+    _controller: '\Drupal\my_custom_rest\Plugin\rest\resource\CustomRestResource::get'
+    _title: 'Custom REST Resource'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['basic_auth'] # Adjust based on your authentication method.
+
+my_custom_rest.custom_resource_post:
+  path: '/api/custom'
+  defaults:
+    _controller: '\Drupal\my_custom_rest\Plugin\rest\resource\CustomRestResource::post'
+    _title: 'Custom REST Resource POST'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['basic_auth'] # Adjust based on your authentication method.
