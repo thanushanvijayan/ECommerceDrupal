@@ -9,3 +9,10 @@ services:
       arguments: ['@entity_type.manager', '@entity_type.repository', '@entity_field.manager', '@entity_type.bundle.info', '@module_handler']
       tags:
         - { name: 'normalizer', priority: 100 }
+  my_custom_rest.custom_access_check:
+    class: Drupal\my_custom_rest\Access\CustomAccessCheck
+    arguments: ['@current_user']
+    tags:
+      - { name: access_check, applies_to: _custom_access }
+  my_custom_rest.cache_service:
+    class: Drupal\my_custom_rest\Services\CacheService

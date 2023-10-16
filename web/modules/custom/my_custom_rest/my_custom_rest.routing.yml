@@ -29,5 +29,6 @@ my_custom_rest.node_detail:
     _title: 'Node Detail'
   requirements:
     _permission: 'access content'
+    _custom_access: '\Drupal\my_custom_rest\Access\CustomAccessCheck::access'
   options:
     _auth: ['basic_auth']

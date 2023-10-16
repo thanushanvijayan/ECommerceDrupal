@@ -30,7 +30,6 @@ class CustomRestResource extends ResourceBase {
   }
 
   public function post($data) {
-    // Your code to handle the posted data.
     return new ResourceResponse('toto');
   }
 
