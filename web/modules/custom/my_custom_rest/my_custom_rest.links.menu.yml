@@ -1,0 +1,13 @@
+entity.manufacturer.collection:
+  title: 'Manufacturers'
+  route_name: entity.manufacturer.collection
+  description: 'List of manufacturers'
+  parent: system.admin_content
+  weight: 100
+
+entity.item.collection:
+  title: 'Items'
+  route_name: entity.item.collection
+  description: 'List of items'
+  parent: system.admin_content
+  weight: 101

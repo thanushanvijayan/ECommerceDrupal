@@ -1,0 +1,40 @@
+manufacturer:
+  type: entity_base
+  label: 'Manufacturer'
+  mapping:
+    id:
+      type: integer
+      label: 'ID'
+      description: 'The ID of the Manufacturer entity.'
+    uuid:
+      type: string
+      label: 'UUID'
+      description: 'The UUID of the Manufacturer entity.'
+    langcode:
+      type: string
+      label: 'Language code'
+      description: 'The language code of the Manufacturer entity.'
+    name:
+      type: string
+      label: 'Name'
+      description: 'The name of the Manufacturer.'
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false
+    website:
+      type: string
+      label: 'Website'
+      description: 'The website URL of the Manufacturer.'
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false
+    email:
+      type: string
+      label: 'Email'
+      description: 'The email address of the Manufacturer.'
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false

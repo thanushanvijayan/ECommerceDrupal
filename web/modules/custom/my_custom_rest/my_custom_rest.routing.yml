@@ -32,3 +32,83 @@ my_custom_rest.node_detail:
     _custom_access: '\Drupal\my_custom_rest\Access\CustomAccessCheck::access'
   options:
     _auth: ['basic_auth']
+
+entity.manufacturer.canonical:
+  path: '/manufacturer/{manufacturer}'
+  defaults:
+    _entity_view: 'manufacturer'
+  requirements:
+    _entity_access: 'manufacturer.view'
+
+entity.manufacturer.collection:
+  path: '/admin/content/manufacturer'
+  defaults:
+    _entity_list: 'manufacturer'
+    _title: 'Manufacturers'
+  requirements:
+    _permission: 'access content'
+
+entity.manufacturer.add_form:
+  path: '/admin/content/manufacturer/add'
+  defaults:
+    _entity_form: 'manufacturer.add'
+    _title: 'Add Manufacturer'
+  requirements:
+    _permission: 'access content'
+
+entity.manufacturer.edit_form:
+  path: '/admin/content/manufacturer/{manufacturer}/edit'
+  defaults:
+    _entity_form: 'manufacturer.edit'
+    _title: 'Edit Manufacturer'
+  requirements:
+    _entity_access: 'manufacturer.update'
+
+entity.manufacturer.delete_form:
+  path: '/admin/content/manufacturer/{manufacturer}/delete'
+  defaults:
+    _entity_form: 'manufacturer.delete'
+    _title: 'Delete Manufacturer'
+  requirements:
+    _entity_access: 'manufacturer.delete'
+
+entity.item.canonical:
+  path: '/item/{item}'
+  defaults:
+    _entity_view: 'item'
+  requirements:
+    _entity_access: 'item.view'
+
+entity.item.collection:
+  path: '/admin/content/item'
+  defaults:
+    _entity_list: 'item'
+    _title: 'Items'
+  requirements:
+    _permission: 'access content'
+
+entity.item.add_form:
+  path: '/admin/content/item/add'
+  defaults:
+    _entity_form: 'item.add'
+    _title: 'Add Item'
+  requirements:
+    _permission: 'access content'
+
+entity.item.edit_form:
+  path: '/admin/content/item/{item}/edit'
+  defaults:
+    _entity_form: 'item.edit'
+    _title: 'Edit Item'
+  requirements:
+    _entity_access: 'item.update'
+
+entity.item.delete_form:
+  path: '/admin/content/item/{item}/delete'
+  defaults:
+    _entity_form: 'item.delete'
+    _title: 'Delete Item'
+  requirements:
+    _entity_access: 'item.delete'
+
+

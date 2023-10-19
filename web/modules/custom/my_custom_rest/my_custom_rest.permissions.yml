@@ -1,0 +1,9 @@
+administer manufacturer:
+  title: 'Administer Manufacturer entities'
+  description: 'Allow the user to administer Manufacturer entities'
+  restrict access: true
+
+administer item:
+  title: 'Administer Item entities'
+  description: 'Allow the user to administer Item entities'
+  restrict access: true

@@ -1,0 +1,41 @@
+item:
+  type: entity_base
+  label: 'Item'
+  mapping:
+    id:
+      type: integer
+      label: 'ID'
+      description: 'The ID of the Item entity.'
+    uuid:
+      type: string
+      label: 'UUID'
+      description: 'The UUID of the Item entity.'
+    langcode:
+      type: string
+      label: 'Language code'
+      description: 'The language code of the Item entity.'
+    name:
+      type: string
+      label: 'Name'
+      description: 'The name of the Item.'
+      settings:
+        max_length: 50
+        is_ascii: false
+        case_sensitive: false
+    price:
+      type: decimal
+      label: 'Price'
+      description: 'The price of the Item.'
+      settings:
+        precision: 10
+        scale: 2
+    published_on:
+      type: datetime
+      label: 'Published On'
+      description: 'The date and time when the item was published.'
+    manufacturer:
+      type: entity_reference
+      label: 'Manufacturer'
+      description: 'The referenced Manufacturer entity.'
+      settings:
+        target_type: 'manufacturer'

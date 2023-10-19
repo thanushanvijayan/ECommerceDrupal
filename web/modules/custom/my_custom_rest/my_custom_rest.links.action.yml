@@ -1,0 +1,11 @@
+entity.manufacturer.add_form:
+  route_name: entity.manufacturer.add_form
+  title: 'Add Manufacturer'
+  appears_on:
+    - entity.manufacturer.collection
+
+entity.item.add_form:
+  route_name: entity.item.add_form
+  title: 'Add Item'
+  appears_on:
+    - entity.item.collection
